@@ -1,0 +1,189 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "INIFileParserDotNetCore/2.5.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/INIFileParserDotNetCore.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/INIFileParserDotNetCore.dll": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "System.Json/4.7.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/System.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Json.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "INIFileParserDotNetCore/2.5.2": {
+      "sha512": "D1MtoiGz+BIN3qqHXqIiPQHDM0u2HoOO3OAxUjIVOQFU54s2ppqSQ/W3dmm0rOd/areXrzUPH+rfYUU/fMwG8A==",
+      "type": "package",
+      "path": "inifileparserdotnetcore/2.5.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "inifileparserdotnetcore.2.5.2.nupkg.sha512",
+        "inifileparserdotnetcore.nuspec",
+        "lib/net40/INIFileParserDotNetCore.dll",
+        "lib/netstandard2.0/INIFileParserDotNetCore.dll"
+      ]
+    },
+    "Newtonsoft.Json/13.0.1": {
+      "sha512": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.1.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "System.Json/4.7.1": {
+      "sha512": "XymImdgljgVEkd9trFSKWlNJac1Hr+L9lwFLQSUUQfFMkm88AHI6DINAMhpoiUWQIPLIqEjR702eydUb4Qb3Ng==",
+      "type": "package",
+      "path": "system.json/4.7.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/Xamarinmac20/_._",
+        "lib/monoandroid10/_._",
+        "lib/monotouch10/_._",
+        "lib/net461/System.Json.dll",
+        "lib/net461/System.Json.xml",
+        "lib/netstandard1.0/System.Json.dll",
+        "lib/netstandard1.0/System.Json.xml",
+        "lib/netstandard2.0/System.Json.dll",
+        "lib/netstandard2.0/System.Json.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/Xamarinmac20/_._",
+        "ref/monoandroid10/_._",
+        "ref/monotouch10/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.json.4.7.1.nupkg.sha512",
+        "system.json.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "INIFileParserDotNetCore >= 2.5.2",
+      "Newtonsoft.Json >= 13.0.1",
+      "System.Json >= 4.7.1"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\junio\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Vidigal\\aa_time_3\\EDA.csproj",
+      "projectName": "EDA",
+      "projectPath": "C:\\Vidigal\\aa_time_3\\EDA.csproj",
+      "packagesPath": "C:\\Users\\junio\\.nuget\\packages\\",
+      "outputPath": "C:\\Vidigal\\aa_time_3\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\junio\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "dependencies": {
+          "INIFileParserDotNetCore": {
+            "target": "Package",
+            "version": "[2.5.2, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.1, )"
+          },
+          "System.Json": {
+            "target": "Package",
+            "version": "[4.7.1, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+﻿@model IEnumerable<Dados>
+
+<head>
+
+</head>
+
+<body>
+    <h2>Orgãos</h2>
+
+    <input type="text" id="busca" onkeyup="pesquisar()" placeholder="Buscar Órgão..">
+
+    <table id="orgaos" class="table table-hover table-bordered m-2">
+
+        <thead>
+            <tr>
+                <th>Codigo</th>
+                <th>Descricao</th>
+
+        </thead>
+        <tbody>
+            @foreach (var r in Model)
+            {
+                <tr>
+                    <td>@r.codigo</td>
+                    <td>@r.descricao</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <button onclick="lastElement()" class="btn btn-primary">Buscar ultimo elemento</button>
+    <p class='lastElement'></p>
+
+    <button onclick="binary()" class="btn btn-primary">Binario</button>
+
+    <button onclick="linear()" class="btn btn-primary">Linear</button>
+
+    <button onclick="nested()" class="btn btn-primary">Busca Aninhada</button>
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    //botão chama o método lastElement em Home controller, pega o primeiro resultado e anexa no html da pagina
+    function lastElement() {
+        $.get("/Home/lastElement", function (data) {
+            //console.log(JSON.parse(data));
+            let json = JSON.parse(data)[0];
+            $(".lastElement").html(json.codigo + "-" + json.descricao)
+        });
+    }
+
+
+    function binary() {
+        $.get("/Home/inputBinario", function (data) {
+            //console.log(JSON.parse(data));
+            console.log(data);
+    @* let json = JSON.parse(data)[0];
+        $(".lastElement").html(json.codigo + "-" +json.descricao)
+        *@
+        }); 
+    }
+
+    function linear() {
+
+        $.get("/Home/linear", function (data) {
+
+            //console.log(JSON.parse(data));
+    @* let json = JSON.parse(data)[0];
+        $(".lastElement").html(json.codigo + "-" +json.descricao) *@
+        });
+    }
+
+    function pesquisar() {
+        var input, filtro, table, tr, td, i, txtValue;
+        input = document.getElementById("busca");
+        filtro = input.value.toUpperCase();
+        table = document.getElementById("orgaos");
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[1];//pega o proximo td como parâmetro de busca (1=descrição)
+            if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filtro) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+</script>
